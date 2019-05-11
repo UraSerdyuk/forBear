@@ -1,0 +1,31 @@
+.title {
+  margin: auto !important;
+  text-transform: uppercase;
+}
+
+.add {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5%;
+}
+.input {
+  background: aliceblue;
+  width: 80%;
+  border-radius: 10px;
+}
+.users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  height: 100vh;
+  background-color: darkgrey;
+}
+.chip {
+  margin-bottom: 5%;
+  color: black  !important;
+  text-transform: uppercase;
+  background-color: #3f669f !important;
+  height: 10%;
+  width: 90%;
+}

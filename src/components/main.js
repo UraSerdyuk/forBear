@@ -8,21 +8,27 @@ import Button from '@material-ui/core/Button';
 import Fab from "@material-ui/core/Fab";
 import AddIcon from "@material-ui/icons/Add";
 import InputBase from "@material-ui/core/InputBase";
+import './style.css'
+
+
+
+
+
+
+
 
 const styles = {
-  root: {
-    flexGrow: 1
-  },
-  menuButton: {
-    marginLeft: -18,
-    marginRight: 10
-  },
-  button:{
+  // root: {
+  //   flexGrow: 1
+  // },
+  // menuButton: {
+  //   marginLeft: -18,
+  //   marginRight: 10
+  // },
+  // button:{
 
-  },
-  input:{
-    background:'aliceblue'
-  }
+  // },
+
 };
 
 function DenseAppBar(props) {
@@ -31,17 +37,23 @@ function DenseAppBar(props) {
 
   const handleClick = () => {
     clickBtn();
+    resetInputValue();
   };
+  const resetInputValue = () =>{
+    let div =  document.querySelector('.input');
+    let input =  div.firstElementChild;
+    input.value  = '';
+  }
   return (
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar variant="dense">
-          <Typography variant="h6" color="inherit">
-            За пивком )
+          <Typography className='title' variant="h6" color="inherit">
+            За пивком 
           </Typography>
         </Toolbar>
         <div className="add">
-          <InputBase className={classes.input} onChange={getValue} placeholder="Веди имя" />
+          <InputBase className='input'  onChange={getValue} placeholder="Веди имя" />
           <Fab
             size="small"
             color="secondary"
@@ -51,11 +63,10 @@ function DenseAppBar(props) {
             <AddIcon />
           </Fab>
         </div>
-        <Button variant="contained" color="secondary" className={classes.button} onClick={random}>
-        Начать сортировку
-      </Button>
+        <Button variant="contained" color="secondary" className={classes.button} onClick={random} >
+           Начать сортировку
+        </Button>
       </AppBar>
-
     </div>
   );
 }
