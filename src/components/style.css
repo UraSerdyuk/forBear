@@ -18,12 +18,13 @@
   flex-direction: column;
   align-items: center;
   padding-top: 5%;
-  height: 100vh;
+  height: 80vh;
   background-color: darkgrey;
 }
 .chip {
   margin-bottom: 5%;
-  color: black  !important;
+  color: white  !important;
+  font-size: 20px;
   text-transform: uppercase;
   background-color: #3f669f !important;
   height: 10%;

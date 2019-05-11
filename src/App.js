@@ -38,11 +38,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Main
-          clickBtn={this.addCard}
-          getValue={this.getInputValue}
-          random={this.startRandom}
-        />
+       
         <div className="users">
           {this.state.user.map((el,ind) => {
             return (
@@ -56,6 +52,13 @@ class App extends Component {
             );
           })}
         </div>
+        <Main
+          clickBtn={this.addCard}
+          getValue={this.getInputValue}
+          random={this.startRandom}
+        />
+
+
       </div>
     );
   }
