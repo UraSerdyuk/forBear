@@ -63,7 +63,7 @@ function DenseAppBar(props) {
             <AddIcon />
           </Fab>
         </div>
-        <Button variant="contained" color="secondary" className={classes.button} onClick={random} >
+        <Button variant="contained" color="secondary" className='button' onClick={random} >
            Начать сортировку
         </Button>
       </AppBar>

@@ -18,8 +18,11 @@
   flex-direction: column;
   align-items: center;
   padding-top: 5%;
-  height: 80vh;
-  background-color: darkgrey;
+  height: 70vh;
+  width: 100%;
+  background-image: url('https://images.pexels.com/photos/2262620/pexels-photo-2262620.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: 100%;
+  /* background-color: darkgrey; */
 }
 .chip {
   margin-bottom: 5%;
@@ -29,4 +32,7 @@
   background-color: #3f669f !important;
   height: 10%;
   width: 90%;
+}
+.button {
+  margin-bottom: 5%;
 }
