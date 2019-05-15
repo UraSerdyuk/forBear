@@ -47,11 +47,13 @@ function DenseAppBar(props) {
   return (
     <div className={classes.root}>
       <AppBar position="static" className='appBar'>
+
         <Toolbar variant="dense">
           <Typography className='title' variant="h6" color="inherit">
             За пивком 
           </Typography>
         </Toolbar>
+
         <div className="add">
           <InputBase className='input'  onChange={getValue} placeholder="Веди имя" />
           <Fab
@@ -62,7 +64,9 @@ function DenseAppBar(props) {
           >
             <AddIcon />
           </Fab>
+         
         </div>
+        
         <Button variant="contained" color="secondary" className='button' onClick={random} >
            Начать сортировку
         </Button>
