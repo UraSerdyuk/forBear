@@ -18,9 +18,9 @@ import './style.css'
 
 
 const styles = {
-  // root: {
-  //   flexGrow: 1
-  // },
+  root: {
+    flexGrow: 1,
+  },
   // menuButton: {
   //   marginLeft: -18,
   //   marginRight: 10
@@ -46,7 +46,7 @@ function DenseAppBar(props) {
   }
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" className='appBar'>
         <Toolbar variant="dense">
           <Typography className='title' variant="h6" color="inherit">
             За пивком 

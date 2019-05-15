@@ -18,14 +18,14 @@
   flex-direction: column;
   align-items: center;
   padding-top: 5%;
-  height: 70vh;
-  width: 100%;
+height: 80vh;
   background-image: url('https://images.pexels.com/photos/2262620/pexels-photo-2262620.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-size: cover;
   background-repeat: no-repeat;
   /* background-color: darkgrey; */
 }
 .chip {
+  margin-bottom: 5%;
   color: white  !important;
   font-size: 20px;
   text-transform: uppercase;
@@ -34,5 +34,8 @@
   width: 90%;
 }
 .button {
-
+  /* margin-bottom: 2%; */
+}
+.appBar {
+  height: 20vh;
 }
